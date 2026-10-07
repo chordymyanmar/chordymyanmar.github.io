@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160829">
+  <title>Chordy Myanmar</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a href="index.html" aria-label="Chordy Myanmar"><span class="logo"></span></a>
+      <nav><a href="index.html">Songs</a></nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap">
+      <h2>မြန်မာသီချင်း Guitar Chord များ</h2>
+      <p>သီချင်းရှာပြီး chord တွေကို ချက်ချင်းကြည့်ပါ</p>
+      <div class="controls">
+        <input id="q" type="search" placeholder="သီချင်း / အဆိုတော် ရှာရန်" autocomplete="off">
+      </div>
+    </div>
+  </section>
+  <main class="wrap layout">
+    <aside class="chips" id="singers"></aside>
+    <section>
+      <div class="count" id="count"></div>
+      <div id="list"><div class="msg">Loading…</div></div>
+    </section>
+  </main>
+  <footer>&copy; Chordy Myanmar</footer>
+  <script src="app.js"></script>
+  <script>initList();</script>
+</body>
+</html>
